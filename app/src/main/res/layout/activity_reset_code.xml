@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    tools:context=".ResetCode">
+
+    <TextView
+        android:id="@+id/reset_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/reset_code"
+        android:textColor="@color/darkgray"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/helvetica"
+        android:textStyle="bold"
+        android:textColor="@color/darkgray"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_code" />
+
+    <TextView
+        android:id="@+id/reset_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/helvetica"
+        android:text="We sent a 6-digit code to your email. Enter that code to reset your password"
+        android:textAlignment="center"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_email" />
+
+
+    <EditText
+        android:id="@+id/edt_reset_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="28dp"
+        android:hint="@string/enter_code"
+        android:textAlignment="center"
+        android:textColor="@color/darkgray"
+        android:maxLength="6"
+        android:inputType="numberPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_desc" />
+
+    <ImageView
+        android:id="@+id/code_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/otp_verify"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reset_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="100dp"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/hover"
+        android:text="@string/continue_"
+        android:textColor="@drawable/textcolorhover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clickContinue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    tools:context=".ForgotPassword">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:layout_marginTop="100dp"
+        android:text="About"
+        android:textColor="@color/darkgray"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/yoanep"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Nama : "
+        android:gravity="left"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/txt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Hanif Fahmi"
+        android:gravity="left"
+        android:textColor="@color/darkgray"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+    <TextView
+        android:id="@+id/nimkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Nim/Kelas :"
+        android:gravity="left"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama" />
+
+    <TextView
+        android:id="@+id/txt_nimkelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="A11.2020.12418 - A11.43UG"
+        android:gravity="left"
+        android:textColor="@color/darkgray"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nimkelas" />
+
+    <TextView
+        android:id="@+id/project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Project :"
+        android:gravity="left"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nimkelas" />
+
+    <TextView
+        android:id="@+id/txt_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="43UG_A11202012418_HanifFahmi_UTSPPB"
+        android:gravity="left"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/project" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

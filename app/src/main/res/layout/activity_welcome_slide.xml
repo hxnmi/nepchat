@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    tools:context=".WelcomeSlide">
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Hi!"
+        android:textColor="@color/darkgray"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Welcome to NepChat"
+        android:textColor="@color/darkgray"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hi" />
+
+    <TextView
+        android:id="@+id/welcome_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        android:text="Your life is your message to the world"
+        android:fontFamily="@font/helvetica"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:layout_width="414dp"
+        android:layout_height="341dp"
+        android:src="@drawable/waveinwindow"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_desc" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/hover"
+        android:fontFamily="sans-serif"
+        android:text="Get Started"
+        android:textColor="@drawable/textcolorhover"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clickGetStarted" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
